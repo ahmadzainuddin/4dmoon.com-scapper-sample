@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 # Great thanks to my Indian friend
 # who requested this scraper sample ;)
+# example :
+# python3 4dmoon.py 2025-12-28
 
 import re
 import sys
