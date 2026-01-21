@@ -1,0 +1,19 @@
+# Python virtual environment
+venv/
+.venv/
+
+# Temporary files
+temp/
+
+# JSON output (generated data)
+json/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# OS files
+.DS_Store
+
+# Logs (if any)
+*.log
