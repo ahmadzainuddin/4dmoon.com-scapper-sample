@@ -17,15 +17,18 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 import mysql.connector
+from dotenv import load_dotenv
+load_dotenv()
 
 # =========================
 # CONFIG
 # =========================
+
 mysql_cfg = {
-    "host": "127.0.0.1",
-    "user": "root",
-    "password": "!@Abc@123",
-    "database": "4dmoon",
+    "host": os.getenv("DB_HOST", "127.0.0.1"),
+    "user": os.getenv("DB_USER", "root"),
+    "password": os.getenv("DB_PASSWORD"),
+    "database": os.getenv("DB_NAME", "4dmoon"),
 }
 
 BASE = "https://www.4dmoon.com/past-results/{d}"  # d = YYYY-MM-DD

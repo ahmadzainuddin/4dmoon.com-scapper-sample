@@ -14,11 +14,14 @@ import sys
 import os
 import mysql.connector
 
+from dotenv import load_dotenv
+load_dotenv()
+
 mysql_cfg = {
-    "host": "127.0.0.1",
-    "user": "root",
-    "password": "!@Abc@123",
-    "database": "4dmoon",
+    "host": os.getenv("DB_HOST", "127.0.0.1"),
+    "user": os.getenv("DB_USER", "root"),
+    "password": os.getenv("DB_PASSWORD"),
+    "database": os.getenv("DB_NAME", "4dmoon"),
 }
 
 def load_dates(path: str) -> list[str]:
