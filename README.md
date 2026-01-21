@@ -18,6 +18,7 @@ Great thanks to my Indian friend who requested this scraper sample ;)
 ├── run.sh               # Automation runner
 ├── requirements.txt     # Python dependencies
 ├── json/                # JSON output (auto-generated)
+├── images/              # Sample images
 └── venv/                # Python virtual environment
 ```
 
