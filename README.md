@@ -17,6 +17,7 @@ Great thanks to my Indian friend who requested this scraper sample ;)
 ├── get-draw-date.sh     # Fetch latest available draw dates
 ├── run.sh               # Automation runner
 ├── requirements.txt     # Python dependencies
+├── .env                 # set your mysql login
 ├── json/                # JSON output (auto-generated)
 ├── images/              # Sample images
 └── venv/                # Python virtual environment
@@ -47,6 +48,19 @@ Expected tables:
 draw
 prize_number
 raw_line
+```
+
+---
+
+### Config MySQL / MariaDB
+```
+vi .env
+
+DB_HOST=127.0.0.1
+DB_USER=root
+DB_PASSWORD=your-pass-here
+DB_NAME=4dmoon
+
 ```
 
 ---
