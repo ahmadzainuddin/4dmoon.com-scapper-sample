@@ -153,6 +153,11 @@ ORDER BY d.draw_date DESC, d.title, p.kind, p.pos;
 
 ---
 
+## Sample Output (Screenshot)
+
+<img src="images/Screenshot.png" width="800">
+---
+
 ## Notes
 
 - Numbers are stored as VARCHAR to preserve leading zeros
